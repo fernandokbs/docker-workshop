@@ -1,0 +1,8 @@
+webdriver_manager
+python-dotenv
+SQLAlchemy
+selenium
+gunicorn
+docker
+Flask
+fdb

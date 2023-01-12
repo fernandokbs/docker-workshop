@@ -1,0 +1,16 @@
+version: "3.7"
+
+services:
+    app:
+      container_name: python-bot
+      build:
+        context: .
+        dockerfile: Dockerfileapp 
+    
+    proxy:
+      build:
+        context: .
+        dockerfile: Dockerfilenginx
+      restart: always
+      ports:
+        - 80:80
